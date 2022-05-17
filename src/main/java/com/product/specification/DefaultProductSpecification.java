@@ -12,6 +12,6 @@ public class DefaultProductSpecification implements ProductSpecificationCreator 
 
     @Override
     public Specification<Product> createSpecification(Map<String, String> queryParameters) {
-        return createSpecification(Collections.emptyMap(), Collections.emptyMap(), Collections.emptySet());
+        return createSpecification(Collections.emptyMap(), queryParameters, Collections.emptySet());
     }
 }
